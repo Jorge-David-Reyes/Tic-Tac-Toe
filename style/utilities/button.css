@@ -1,0 +1,155 @@
+button{
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.button-yellow, 
+.button-blue, 
+.secondary-button-yellow, 
+.secondary-button-silver, 
+.button-restart {
+    border:none;
+
+    color: var(--dark-navy)!important;
+}
+
+
+
+/***********************************************************/
+
+.button-yellow, .button-blue {
+    width: 100%;
+    min-height: 60px;
+    /* padding: 29.42px 132.3px; */
+    margin-bottom: 30px;
+    border-radius: 15px;
+
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+
+
+.button-yellow{
+    background-color: var(--light-yellow);
+    box-shadow: 0 7px rgb(207, 156, 2);
+    /* box-shadow: 0 0.6em rgb(200, 150, 0); */
+}
+
+.button-yellow:active{
+    background-color: var(--light-yellow-hover);
+}
+
+.button-blue{
+    background-color: var(--light-blue);
+    box-shadow: 0 7px rgb(49, 164, 159);
+    /* box-shadow: 0 7px rgb(49, 195, 189); */
+}
+.button-blue:active{
+    background-color: var(--light-blue-hover);
+}
+
+/***********************************************************/
+
+.secondary-button-yellow, .secondary-button-silver {
+    width: 226px;
+    height: 47px;
+    border-radius: 15px;
+
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.secondary-button-yellow{
+    background-color: var(--light-yellow);
+    box-shadow: 0 5px rgb(207, 156, 2);
+}
+.secondary-button-yellow:active{
+    background-color: var(--light-yellow-hover);
+}
+
+.secondary-button-silver{
+    background-color: var(--silver);
+    box-shadow: 0 5px rgb(131, 156, 167);
+    /* box-shadow: 0 5px rgb(168, 191, 201); */
+}
+.secondary-button-silver:active{
+    background-color: var(--silver-hover);
+}
+
+/***********************************************************/
+
+
+.button-restart {
+    /* min-width: 52px; */
+    min-height: 48px;
+
+    border-radius: 10px;
+}
+
+.button-restart{
+    background-color: var(--silver);
+    box-shadow: 0 4px rgb(131, 156, 167);
+}
+.button-restart:active {
+    background-color: var(--silver-hover);
+}
+
+
+.button-restart:active svg{
+    -webkit-animation:spin 0.2s ease-in-out;
+     -moz-animation:spin 0.2s ease-in-out;
+     animation:spin 0.2s ease-in-out;
+ }
+ @-moz-keyframes spin {
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+ }
+ @-webkit-keyframes spin {
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }
+ }
+ @keyframes spin { 
+     100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } 
+ }
+
+
+/***********************************************************/
+
+/*
+.button-yellow:active {
+    background-color: var(--light-yellow-hover);
+    box-shadow: none; /* Oculta la sombra cuando se presiona *
+    transform: translateY(3px); /* Desplaza el botón hacia abajo al presionar *
+    height: 63px; /* Ajusta la altura del botón para incluir la sombra *
+}
+
+.button-blue:active {
+    background-color: var(--light-blue-hover);
+    box-shadow: none; /* Oculta la sombra cuando se presiona *
+    transform: translateY(3px); /* Desplaza el botón hacia abajo al presionar *
+    height: 63px; /* Ajusta la altura del botón para incluir la sombra *
+}
+
+.secondary-button-yellow:active {
+    background-color: var(--light-yellow-hover);
+    box-shadow: none; /* Oculta la sombra cuando se presiona *
+    transform: translateY(3px); /* Desplaza el botón hacia abajo al presionar *
+    height: 52px; /* Ajusta la altura del botón para incluir la sombra *
+}
+
+.secondary-button-silver:active {
+    background-color: var(--silver-hover);
+    box-shadow: none; /* Oculta la sombra cuando se presiona *
+    transform: translateY(3px); /* Desplaza el botón hacia abajo al presionar *
+    height: 52px; /* Ajusta la altura del botón para incluir la sombra *
+}
+
+.button-restart:active {
+    background-color: var(--silver-hover);
+    box-shadow: none; /* Oculta la sombra cuando se presiona *
+    transform: translateY(3px); /* Desplaza el botón hacia abajo al presionar *
+    height: 52px; /* Ajusta la altura del botón para incluir la sombra *
+}
+
+*/
+

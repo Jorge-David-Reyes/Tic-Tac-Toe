@@ -1,0 +1,44 @@
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 133px;
+
+    font-size: 40px;
+    font-weight: bold;
+    color: var(--dark-navy);
+
+    background-color: var(--semi-dark-navy);
+    border-radius: 10px;
+    box-shadow: 0 7px rgb(17, 28, 35);
+
+    cursor: pointer;
+}
+
+.cell-win-o{
+    background-color: var(--light-yellow);
+    box-shadow: 0 7px rgb(207, 156, 2);
+}
+
+.cell-win-x{
+    background-color: var(--light-blue);
+    box-shadow: 0 7px rgb(49, 164, 159);
+}
+
+.cell-win-o svg path, .cell-win-x svg path{
+    fill: var(--semi-dark-navy);
+}
+
+
+
+.cell-hover-o svg path{
+    fill: transparent;
+    stroke: var(--light-yellow);
+}
+
+.cell-hover-x svg path{
+    fill: transparent;
+    stroke: var(--light-blue);
+}

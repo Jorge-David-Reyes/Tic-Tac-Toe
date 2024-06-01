@@ -1,0 +1,72 @@
+@import url('./utilities/button.css');
+@import url('./utilities/logo.css');
+@import url('./utilities/cell.css');
+@import url('./utilities/overlay.css');
+
+html {
+
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+:root {
+    --font-family: "Outfit", sans-serif;
+
+    --dark-navy: hsl(202, 32%, 15%); /*#1A2A33 */
+    --semi-dark-navy: hsl(199, 35%, 19%); /*#1F3641 */
+    --silver: hsl(198, 23%, 72%); /*#A8BFC9 */
+    --silver-hover: hsl(197, 33%, 89%); /*#DBE8ED */
+    --light-blue: hsl(178, 60%, 48%); /*#31C3BD */
+    --light-blue-hover: hsl(178, 75%, 65%); /*#65E9E4*/
+    --light-yellow: hsl(39, 88%, 58%); /*#F2B137 */
+    --light-yellow-hover: hsl(39, 100%, 69%); /*#FFC860 */
+}
+
+body, h1, h2, h3, h4, button {
+    font-family: var(--font-family);
+}
+
+body {
+    font-size: 14px;
+    font-weight: 500; /* medium */
+    letter-spacing: 0.8px;
+    color:white;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--dark-navy);
+}
+
+
+h1 { /* heading (L) */
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2.5px;
+}
+
+h2 { /* heading (M) */
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+h3 { /* heading (S) */
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1.25px;
+}
+
+h4 { /* heading (XS) */
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}

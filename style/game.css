@@ -1,0 +1,111 @@
+@import url('./index.css');
+
+/*! Game Container */
+.box-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: min(460px, 100%);
+    min-height: min(623px, 100%);
+}
+
+/*! Game Header*/
+.game-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+
+    width: 100%;
+    min-height: 52px;
+}
+#turn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    width: 140px;
+    min-height: 48px;
+
+    padding: 10px 25px;
+    border-radius: 10px;
+
+    background-color: var(--semi-dark-navy);
+    box-shadow: 0 4px rgb(17, 28, 35);
+}
+
+#turn svg{
+    width: 20px;
+    height: 20px;
+    margin-right:15px ;
+}
+
+#turn svg path{
+    fill: var(--silver);
+}
+
+#turn h4{
+    margin: 0px;
+    color: var(--silver);
+}
+
+.game-header .button-restart{
+    width: 52px;
+}
+
+
+/* ! Game Table */
+.game-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    width: 100%;
+}
+
+
+
+
+/*! Game Footer*/
+.game-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+
+    width: 100%;
+    height: 72px;
+}
+
+.score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100%;
+    border-radius: 15px;
+}
+
+.score p, .score h2 {
+    margin: 0px;
+    color: var(--dark-navy)!important;
+}
+
+#player-x{
+    background-color: var(--light-blue);
+}
+
+#tie {
+    background-color: var(--silver);
+}
+
+#player-o {
+    background-color: var(--light-yellow);
+}

@@ -1,0 +1,92 @@
+@import url('./index.css');
+
+.box-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: min(460px, 100%);
+    min-height: min(471px, 100%);
+}
+
+
+/* ! Pick-player-mark */
+.pick-player-mark{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
+    min-height: 198px;
+
+    padding: 10px 25px;
+    margin-top: 30px;  
+    margin-bottom: 50px;
+    border-radius: 20px;
+
+    background-color: var(--semi-dark-navy);
+    box-shadow: 0 7px rgb(17, 28, 35);
+}
+
+.pick-player-mark p{
+    color: rgb(168, 191,  201, 0.5);
+    text-transform: uppercase;
+
+    text-align: center;
+}
+
+#title_new-game {
+    text-transform: uppercase;
+    color: var(--silver);
+
+    text-align: center;
+}
+
+/* ! select-mark */
+.select-mark{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 8px;
+    border-radius: 10px;
+
+    background-color: var(--dark-navy);
+}
+
+#mark-o, #mark-x{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 50%;
+    /* height: 100%; */
+
+    padding: 10px;
+    border-radius: 10px;  
+}
+
+
+#mark-o:hover, #mark-x:hover{
+    cursor: pointer;
+    background-color: var(--silver);
+}
+
+#mark-x:hover svg path,
+#mark-o:hover svg path {
+    fill: var(--dark-navy);
+}
+
+#mark-o svg, #mark-x svg{
+    width: 31.74px;
+    height: 31.74px;
+}
+
+#mark-o svg path, #mark-x svg path{
+    fill: var(--silver) ;
+}
